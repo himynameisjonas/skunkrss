@@ -1,0 +1,98 @@
+/* @override http://skunk.himynameisjonas.net/rss/style.css */
+
+body {
+	text-align: center;
+	color: black;
+	margin-top: 2em;
+	background: #C2E272;
+
+}
+
+form {
+	text-align: center;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	padding-left: 20px;
+}
+input {
+text-align: center;
+}
+
+
+#skunkid {
+	clear: both;
+	width: 340px;
+	margin-bottom: 5px;
+	font-size: 1.8em;
+	padding: 0;
+	margin: 0;
+}
+#submit {
+	font-size: 1em;
+	width: 100px;
+}
+
+#content {
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-bottom: 1em solid #8AC318;
+	border-top: .5em solid #8AC318;
+	background-color: #fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 20px 20px 10px;
+}
+p {
+	padding-left: 20px;
+	padding-right: 20px;	
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+h1 {
+	text-transform: uppercase;
+	font: bold 3.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+h2 {
+	font-size: 1em;
+}
+h1 a,h2 a {
+	color: black;
+	text-decoration: none;
+	background: none;
+
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	background-color: #FFFFC0;
+}
+a:hover {
+	text-decoration: underline;
+	background: none;
+}
+
+.alert {
+	color: #8AC318;
+}
+
+form {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+#footer {
+	border-top: 1px solid #8AC318;
+	padding-top: 5px;
+	font-size: 0.7em;
+	text-align: center;
+	color: #3e580a;
+	padding-bottom: 5px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
