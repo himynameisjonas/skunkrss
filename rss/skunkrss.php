@@ -157,7 +157,7 @@ if (file_exists($file)) {
 		echo "</pubDate>\n";
 		echo "<link>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."</link>\n";
 	//	echo "<content>\n";
-		echo "<![CDATA[";
+	//	echo "<![CDATA[";
 	
 	// parse content
 		$tags_to_strip = Array("td","tr","font");
@@ -169,11 +169,11 @@ if (file_exists($file)) {
 		if ($counter == $count) {
 			$content[$counter] = get_title($content[$counter],"</table>");
 		}
-		echo trim($content[$counter]);
+	//	echo trim($content[$counter]);
 
 	// end parse
 
-		echo "]]>\n";
+	//	echo "]]>\n";
 		//echo "</content>\n";
 
 		echo
