@@ -156,6 +156,7 @@ if (file_exists($file)) {
 	
 		echo "</pubDate>\n";
 		echo "<link>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."</link>\n";
+		echo "<guid>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."</guid>\n";
 	//	echo "<content>\n";
 	//	echo "<![CDATA[";
 	
