@@ -156,7 +156,7 @@ if (file_exists($file)) {
 	
 		echo "</pubDate>\n";
 		echo "<link>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."</link>\n";
-		echo "<guid>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."</guid>\n";
+		echo "<guid>http://skunk.spray.se/diary_other.jsp?id=".$_GET["id"]."#".gmdate ("H:i:s", mktime ($time[0],$time[1],$time[2],$date[1],$date[2],$date[0]))."</guid>\n";
 	//	echo "<content>\n";
 	//	echo "<![CDATA[";
 	
