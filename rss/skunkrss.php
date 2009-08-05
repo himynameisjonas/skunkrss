@@ -1,5 +1,5 @@
 <?
-//include_once( "/home/.osiris/himynameisjonas/skunk.himynameisjonas.net/slimstat/inc.stats.php" ); 
+//include_once( "/home/.osiris/himynameisjonas/skunk.himynameisjonas.net/	/inc.stats.php" ); 
 $logfil = "log/".	$_GET['id']."-log.txt";
 $handle = fopen("$logfil", "a");
 $logtxt = "\n ".$_GET['id']." ".$_SERVER['HTTP_USER_AGENT'];
@@ -174,7 +174,7 @@ if (file_exists($file)) {
 	// end parse
 
 		echo "]]>\n";
-		echo "</content>\n";
+		//echo "</content>\n";
 
 		echo
 "<description>".tecken($content[$counter])."</description>";
