@@ -37,7 +37,7 @@ fclose($handle);
 	header("Content-Type: text/xml");	// we want xml format
 	$donation = false;
 	$donationskod = tecken("<p><small><code>
-					_______________________________</code><br/>
+					_______________________________</code>/small></p><p><small><br/>
 					Om du gillar <a href='http://skunk.himynameisjonas.net/rss'>skunkrss</a> så bjud mig gärna på en öl via <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7724873'>paypal</a><br/>
 					(förslagsvis något mellan 30 och 50 kr)<br/>							
 					</small>
