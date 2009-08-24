@@ -45,7 +45,7 @@ if ( $_GET["do"] == "rss" )
 						echo "<p>Vad spännande, du är den första som vill ha just den här skunkdagboken som rss!</p>
 						<p class='alert'>Eller så har du skrivit in fel skunkid, kom ihåg det är inte skunknamnet utan talet som bland annat står i högerspalten på skunksidan.</p>";
 					} else {
-						echo "<p>Du är minsann inte den första som vill ha den här skunkens rss!</p>";
+						echo "<p>Du är minsann inte den första som vill ha den här skunkdagboken som rss!</p>";
 					}
 
 					echo "<p>Ok, nu är det bara att lägga till adressen nedan i valfri rss-läsare för att börja följa skunkdagboken.</p>";
