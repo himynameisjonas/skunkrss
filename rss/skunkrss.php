@@ -36,15 +36,11 @@ fclose($handle);
 	include( 'curl.php' );
 	header("Content-Type: text/xml");	// we want xml format
 	$donation = false;
-	$donationskod = tecken("<p><code><small>
-					<form action='https://www.paypal.com/cgi-bin/webscr' method='post'>_______________________________<br/>
-					Om du gillar <a href='http://skunk.himynameisjonas.net/rss'>skunkrss</a> så bjud mig gärna på en öl via paypal<br/>
+	$donationskod = tecken("<p><small><code>
+					_______________________________</code><br/>
+					Om du gillar <a href='http://skunk.himynameisjonas.net/rss'>skunkrss</a> så bjud mig gärna på en öl via <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7724873'>paypal</a><br/>
 					(förslagsvis något mellan 30 och 50 kr)<br/>							
-					<input type='hidden' name='cmd' value='_s-xclick'>
-					<input type='hidden' name='hosted_button_id' value='7724873'>
-					<input type='image' src='https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-					<img alt='' border='0' src='https://www.paypal.com/sv_SE/i/scr/pixel.gif' width='1' height='1'>
-					</form></code></small>
+					</small>
 				</p>");
 
 	$file = "txt/".$_GET['id'];
@@ -199,7 +195,7 @@ if (file_exists($file)) {
 
 		echo "<description>".tecken($content[$counter]);
 		if ($donation) {
-			//echo $donationskod;
+			echo $donationskod;
 		}
 		echo "</description></item>\n";
 		$counter++;
