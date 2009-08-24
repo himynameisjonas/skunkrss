@@ -35,7 +35,17 @@ fclose($handle);
 	require("functions.php");		// various functions for the text
 	include( 'curl.php' );
 	header("Content-Type: text/xml");	// we want xml format
-
+	$donation = false;
+	$donationskod = tecken("<p><code><small>
+					<form action='https://www.paypal.com/cgi-bin/webscr' method='post'>_______________________________<br/>
+					Om du gillar <a href='http://skunk.himynameisjonas.net/rss'>skunkrss</a> så bjud mig gärna på en öl via paypal<br/>
+					(förslagsvis något mellan 30 och 50 kr)<br/>							
+					<input type='hidden' name='cmd' value='_s-xclick'>
+					<input type='hidden' name='hosted_button_id' value='7724873'>
+					<input type='image' src='https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+					<img alt='' border='0' src='https://www.paypal.com/sv_SE/i/scr/pixel.gif' width='1' height='1'>
+					</form></code></small>
+				</p>");
 
 	$file = "txt/".$_GET['id'];
 	
@@ -88,6 +98,8 @@ if (file_exists($file)) {
 	$nick = get_string($alltext,$start, $end);
 	$nick = trim(strip_tags($nick));
 	
+
+				
 // start printing out the XML document
 
 	echo "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>\n";
@@ -151,7 +163,15 @@ if (file_exists($file)) {
 // HÄR ÄNDRADE JAG!! G>H
 //		$dejt = gmdate ("D, j M Y G:i:s \G\M\T",mktime(0,0,0,1,9,2003);
 		echo gmdate ("D, j M Y H:i:s \G\M\T", mktime ($time[0],$time[1],$time[2],$date[1],$date[2],$date[0]));
-
+		if (gmdate ("j", mktime ($time[0],$time[1],$time[2],$date[1],$date[2],$date[0])) % 2 && gmdate ("i", mktime ($time[0],$time[1],$time[2],$date[1],$date[2],$date[0])) <= 30 ) {
+			if ($donation) {
+				$donation = false;
+			} else {
+				$donation = true;
+			}
+		} else {
+			$donation = false;
+		}
 	// end parse
 	
 		echo "</pubDate>\n";
@@ -177,9 +197,11 @@ if (file_exists($file)) {
 	//	echo "]]>\n";
 		//echo "</content>\n";
 
-		echo
-"<description>".tecken($content[$counter])."</description>";
-		echo "</item>\n";
+		echo "<description>".tecken($content[$counter]);
+		if ($donation) {
+			echo $donationskod;
+		}
+		echo "</description></item>\n";
 		$counter++;
 	} 
 	
