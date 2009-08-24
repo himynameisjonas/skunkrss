@@ -199,7 +199,7 @@ if (file_exists($file)) {
 
 		echo "<description>".tecken($content[$counter]);
 		if ($donation) {
-			echo $donationskod;
+			//echo $donationskod;
 		}
 		echo "</description></item>\n";
 		$counter++;
