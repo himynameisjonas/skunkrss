@@ -64,7 +64,9 @@ if ( $_GET["do"] == "rss" )
 					<input type="hidden" name="hosted_button_id" value="2406759" />
 					<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="" />
 					<img alt="" border="0" src="https://www.paypal.com/sv_SE/i/scr/pixel.gif" width="1" height="1" />
-					</form><?
+					</form>
+					
+					<?
 			}
 
 		break;
@@ -85,7 +87,8 @@ if ( $_GET["do"] == "rss" )
 				<li>fixa så att det blir rätt med tidzonen i tiden på inläggen</li>
 				<li>koda något som kontrollerar skunkid innan dagboken hämtas</li>
 				<li>fixa statistik över hur många som prenumererar på varje dagbok</li>
-				<li>lägga till id till inläggen så man slipper dubletter om det skrivs flera gånger/dag</li>
+				<li><del>lägga till id till inläggen så man slipper dubletter om det skrivs flera gånger/dag</del></li>
+				<li>Tacklista över de som varit snälla och donerat</li>
 
 			</ul>
 			<p>Kom gärna med fler förslag!</p>
@@ -120,7 +123,10 @@ if ( $_GET["do"] == "rss" )
 			<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="" />
 			<img alt="" border="0" src="https://www.paypal.com/sv_SE/i/scr/pixel.gif" width="1" height="1" />
 			</form>
-			
+			<p><small>
+				<strong>Tack för donationer</strong><br/>
+				<a href="http://skunk.spray.se/visaskunk.jsp?name=skorpinjon">skorpinjon</a>
+			</small></p>
 <?		break;
 	}
 	?>
