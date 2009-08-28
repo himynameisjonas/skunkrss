@@ -1,3 +1,7 @@
+String.prototype.isdigits=function(){
+return (/\D/.test(this)==false);
+}
+
 $(document).ready(function () {
 	$form = $('#skunkid');
 	var formvalue = $form.val();
@@ -14,6 +18,10 @@ $(document).ready(function () {
 	})
 	
 	$form.keypress( function(){
-		//console.log($form)
+		if (!$form.val().isdigits()) {
+			$('#noDigits').fadeIn()
+		} else (
+			$('#noDigits').fadeOut()
+		)
 	});
 });

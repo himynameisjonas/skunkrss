@@ -111,7 +111,11 @@ if ( $_GET["do"] == "rss" )
 					<p class="alert">Bäst blir det om ni skriver in ett korrekt skunkid (<strong>inga bokstäver, bara siffor!</strong>) för jag har inte kodat något som kontrollerar det, ännu.</p>
 					<form id="form1" name="form1" action="?do=fixa" method="post">
 						<input type="text" name="skunkid" value="skunkid-nummer" id="skunkid"/><br/>
+						<div id="noDigits" style="display:none">
+							Endast siffror!
+						</div>
 						<input type="submit" name="submit" value="skapa rss" id="submit"/>
+
 					</form>
 
 
