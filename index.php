@@ -24,6 +24,8 @@ if ( $_GET["do"] == "rss" )
 ?>
 	<title>skunkrss - gör rss av skunkdagböcker</title>
 	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="script.js"></script>
 </head>
 
 <body>
