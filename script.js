@@ -12,13 +12,13 @@ $(document).ready(function () {
 		};
 	});
 	$form.blur(function(){
-		if ($form.val() == "") {
+		if ($form.val() == "" || $form.val() == " " || $form.val() == null) {
 			$form.val(formvalue);
 		};
 	})
 	
 	$form.keypress( function(){
-		if (!$form.val().isdigits()) {
+		if (!$form.val().isdigits() && $form.val()!=formvalue) {
 			$('#noDigits').fadeIn()
 		} else (
 			$('#noDigits').fadeOut()

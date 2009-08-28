@@ -56,6 +56,9 @@ if ( $_GET["do"] == "rss" )
 					<h2>skapa en ny rss</h2>
 					<form id='form1' name='form1' action='?do=fixa' method='post'>
 						<input type='text' name='skunkid' value='skunkid' id='skunkid'/><br/>
+						<div id='noDigits' style='display:none'>
+							Endast siffror!
+						</div>
 						<input type='submit' name='submit' value='skapa rss' id='submit'/>
 					</form>
 					";?>
