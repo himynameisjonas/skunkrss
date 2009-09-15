@@ -92,8 +92,8 @@ if ( $_GET["do"] == "rss" )
 				<li>fixa så att det blir rätt med tidzonen i tiden på inläggen</li>
 				<li>koda något som kontrollerar skunkid innan dagboken hämtas</li>
 				<li>fixa statistik över hur många som prenumererar på varje dagbok</li>
-				<li><del>lägga till id till inläggen så man slipper dubletter om det skrivs flera gånger/dag</del></li>
-				<li>Tacklista över de som varit snälla och donerat</li>
+				<li><strike>lägga till id till inläggen så man slipper dubletter om det skrivs flera gånger/dag</strike></li>
+				<li><strike>Tacklista över de som varit snälla och donerat</strike></li>
 
 			</ul>
 			<p>Kom gärna med fler förslag!</p>
@@ -134,7 +134,7 @@ if ( $_GET["do"] == "rss" )
 			</form>
 			<p><small>
 				<strong>Tack för donationer</strong><br/>
-				<a href="http://skunk.spray.se/visaskunk.jsp?name=skorpinjon">skorpinjon</a>
+				<a href="http://skunk.spray.se/visaskunk.jsp?id=2331245">skorpinjon</a>, <a href="http://skunk.spray.se/visaskunk.jsp?id=2460226">Joni</a>
 			</small></p>
 <?		break;
 	}
