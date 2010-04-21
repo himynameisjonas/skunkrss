@@ -151,6 +151,11 @@ document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/ja
 </script><script type="text/javascript">
 try {
 var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+<?php
+if (isset($_GET["do"]) && $_GET["do"] == "fixa" && !isset($_POST['skunkid']) || $_POST['skunkid'] == "skunkid") { ?>
+piwikTracker.setDocumentTitle("rss för: <?php echo $_POST['skunkid']; ?>");
+<?php } ?>
+
 piwikTracker.trackPageView();
 piwikTracker.enableLinkTracking();
 } catch( err ) {}
