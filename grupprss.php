@@ -1,6 +1,5 @@
 <?
 /*
-include_once( "/home/.osiris/himynameisjonas/skunk.himynameisjonas.net/slimstat/inc.stats.php" ); 
 
 
 

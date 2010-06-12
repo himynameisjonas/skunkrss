@@ -1,5 +1,5 @@
 <?
-//include_once( "/home/.osiris/himynameisjonas/skunk.himynameisjonas.net/	/inc.stats.php" ); 
+
 $logfil = "log/".	$_GET['id']."-log.txt";
 $handle = fopen("$logfil", "a");
 $logtxt = "\n ".$_GET['id']." ".$_SERVER['HTTP_USER_AGENT'];
