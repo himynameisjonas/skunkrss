@@ -1,10 +1,13 @@
-/* @override http://skunk.himynameisjonas.net/rss/style.css */
+/* @override 
+	http://skunk.himynameisjonas.net/rss/style.css
+	http://localhost/skunkrss/style.css
+*/
 
 body {
 	text-align: center;
 	color: black;
 	margin-top: 2em;
-	background: #C2E272;
+	background: #669;
 
 }
 
@@ -38,11 +41,12 @@ text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	border-bottom: 1em solid #8AC318;
-	border-top: .5em solid #8AC318;
-	background-color: #fff;
+	border-bottom: 1em solid;
+	border-top: .5em solid;
+	background-color: #e7e7ff;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	padding: 20px 20px 10px;
+	border-color: #336;
 }
 p {
 	padding-left: 20px;
@@ -57,21 +61,28 @@ h1, h2 {
 h1 {
 	text-transform: uppercase;
 	font: bold 3.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	width: 100%;
+		background-color: #336;
+		padding: 20px;
+		margin-left: -20px;
+		margin-top: -20px;
+		margin-bottom: 10px;
+
 }
 h2 {
 	font-size: 1em;
 }
 h1 a,h2 a {
-	color: black;
+	color: #fff;
 	text-decoration: none;
-	background: none;
+	
 
 }
 
 a {
 	text-decoration: none;
-	color: inherit;
-	background-color: #FFFFC0;
+	color: #00c;
 }
 a:hover {
 	text-decoration: underline;
@@ -79,7 +90,7 @@ a:hover {
 }
 
 .alert {
-	color: #8AC318;
+	color: #3167a8;
 }
 
 form {
@@ -88,7 +99,7 @@ form {
 }
 
 #footer {
-	border-top: 1px solid #8AC318;
+	border-top: 1px solid #3167a8;
 	padding-top: 5px;
 	font-size: 0.7em;
 	text-align: center;
