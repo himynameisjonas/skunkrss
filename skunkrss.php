@@ -6,8 +6,10 @@ putenv("TZ=Europe/Stockholm");
 	require("functions.php");		// various functions for the text
 	include( 'curl.php' );
 	header("Content-Type: text/xml");	// we want xml format
-
-	
+   header("Content-Type: application/force-download");
+   header("Content-Type: application/octet-stream");
+   header("Content-Type: application/download");
+	header("Content-Disposition: attachment; filename=skunkdagbok.rss");
 	$page = 0;
    $next_count = 1;
    echo '<?xml version="1.0" encoding="ISO-8859-1" ?>';

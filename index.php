@@ -15,12 +15,6 @@ if (isset($_GET["do"]) && $_GET["do"] == "rss" )
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<?
-	if (isset($_GET["do"]) && $_GET["do"] == "fixa" )
-	{?>
-<link rel="alternate" type="application/rss+xml" title="skunkdagbok" href="http://skunk.himynameisjonas.net/rss/?do=rss&id=<?=$_POST["skunkid"];?>"/>  <?
-}
-?>
 	<title>skunkdagboksexport - exportera din dagbok på skunk</title>
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
@@ -44,7 +38,7 @@ if (isset($_GET["do"]) && $_GET["do"] == "rss" )
 					$file = "txt/".$_POST['skunkid'];
 					echo "<h2>exportera skunkdagböcker</h2>";
 					echo "<p>Ok, nu är det bara att spara filen från nedanstående länk till din dator. brukar funka bra med typ högerklick och sen \"spara som\" eller motsvarande.</p>";
-					echo "<p><a href='http://skunk.himynameisjonas.net/rss/?do=rss&id=".$_POST["skunkid"]."'>http://skunk.himynameisjonas.net/rss/?do=rss&id=".$_POST["skunkid"]."</a></p>
+					echo "<p><a href='http://skunk.himynameisjonas.net/exporter/?do=rss&id=".$_POST["skunkid"]."'>skunkdagbok.rss</a></p>
 					";?>
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<input type="hidden" name="cmd" value="_s-xclick" />

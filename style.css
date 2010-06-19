@@ -3,6 +3,9 @@
 	http://localhost/skunkrss/style.css
 */
 
+html {
+  background: #669;
+}
 body {
 	text-align: center;
 	color: black;
