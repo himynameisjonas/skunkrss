@@ -133,8 +133,8 @@ putenv("TZ=Europe/Stockholm");
       	//	echo "]]>\n";
       		//echo "</content>\n";
 
-      		echo "<description>[CDATA[".tecken($content[$counter]);
-      		echo "]]</description></item>\n";
+      		echo "<description><![CDATA[".$content[$counter];
+      		echo "]]></description></item>\n";
       		$counter++;
    	}
       
