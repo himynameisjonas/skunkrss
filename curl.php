@@ -1,10 +1,9 @@
 <?php
-function hamta ( $id )
+function hamta ( $id, $page = 0 )
 {
-
 $ch = curl_init();
 $timeout = 0; // set to zero for no timeout
-$url = "http://skunk.spray.se/diary_other.jsp?id=".$id;
+$url = "http://skunk.spray.se/diary_other.jsp?id=".$id."&aktuell=".$page;
 $ref_url = "http://www.yahoo.com/";
 $userAgent = 'Googlebot/2.1 (http://www.googlebot.com/bot.html)';
 curl_setopt($ch, CURLOPT_USERAGENT, $userAgent);
@@ -23,7 +22,7 @@ $file_contents = curl_exec($ch);
 curl_close($ch);
 
 // display file
-$filename = "txt/".$id;
+$filename = "txt/".$id."-".$page;
 $handle = fopen ($filename, "w");
 
 if (fwrite($handle, $file_contents) === FALSE) {
